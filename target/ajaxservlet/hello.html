@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script src="hello1.js"></script>
+</head>
+
+<body onload="app.FetchAll()">
+    <form action="javascript:void(0);" method="POST" onsubmit="app.saveorupdate()">
+    <label>Country id:</label>
+    <input type="text" name="countryid" id="countryid">
+    <br>
+    <label>Country name: </label>
+    <input type="text" name="countryname" id="countryname">
+    <!-- <button type="submit" name="submit" id="submit">Add</button> -->
+    <button id="btn">Add</button>
+</form>
+<button onclick="app.getAllCountries()">Click</button>
+<hr>
+<p id="counter"></p>
+<table id="countries">
+
+</table>
+<hr>
+</body>
+
+
+</html>
